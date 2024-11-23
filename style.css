@@ -1,0 +1,294 @@
+/* Main */
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(193, 228, 250);
+    padding: 2% 10%;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+    padding: 4%;
+    text-align: center;
+    background-color: #004494;
+    border-radius: 15px 15px 0px 0px;
+    color: #ffffff;
+}
+
+/* Student Form */
+
+.MainForm {
+    background-color: #ffffff;
+    padding: 2%;
+    margin-top: 0;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    align-items: left;
+}
+
+/* Labels */
+
+.Instructions {
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.Instrcnts {
+    margin-left: 3%;
+    font-weight: 700;
+}
+
+.Instructions li {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.Instructions ol {
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+label {
+    font-weight: 600;
+    font-size: 110%;
+}
+
+.eachGender label {
+    font-weight: lighter;
+}
+
+.MainForm #full-name,
+.MainForm #email,
+.MainForm #age,
+.MainForm #interests {
+    margin-top: 1rem;
+}
+
+/* Inputs/Buttons */
+
+.MainForm input {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    align-items: flex-start;
+}
+
+.MainForm input:focus-visible {
+    border-bottom: 2px solid #004494;
+}
+
+.selection select[type = 'selectbtn'] {
+    display: grid;
+    width: 10%;
+    margin-top: 1%;
+    margin-right: 10px;
+}
+
+.eachGender input[type = 'radio']{
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: auto;
+}
+
+.MainForm input[type = 'checkbox']{
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 2%;
+    width: auto;
+}
+
+.submit [type = 'submit'] {
+    width: 30%;
+    height: auto;
+    outline: none;
+    border: none;
+    margin: 0;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    padding: 2%;
+    font-size: 200%;
+    font-weight: 600;
+    background-color: #0056b3;
+    color: #ffffff;
+    cursor: pointer;
+    align-items: center;
+}
+
+.submit [type='submit']:hover {
+    background-color: #004494;
+}
+
+/* Table */
+
+.enrolled {
+    background-color: #004494;
+    color: #ffffff;
+    margin: 0;
+    border-radius: 15px 15px 0px 0px;
+    padding: 1rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.70rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #004494;
+    color: white;
+}
+
+table tr{
+    background-color: #f2f2f2;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+table th,
+table td {
+    font-size: 90%; 
+}
+h1 {
+    font-size: 140%;
+}
+table {
+    font-size: 80%;
+}
+} 
+    
+    
+@media (max-width: 768px) {
+body {
+    padding: 5%; 
+}
+    
+h1 {
+    font-size: 120%; 
+}
+
+.submit [type = 'submit'] {
+    width: 80%; 
+    font-size: 90%;
+}
+
+.Instruction li {
+    font-size: 70%;
+}
+    
+label {
+    font-size: 90%;
+}
+.MainForm #full-name,
+.MainForm #email,
+.MainForm #age,
+.MainForm #interests {
+    width: 50%;
+    margin-top: .5rem;
+}
+
+table th,
+table td {
+    font-size: 65%; 
+}
+    
+table {
+    font-size: 80%;
+}
+}
+
+@media (max-width: 425px) {
+body {
+    padding: 2%; 
+}
+
+h1 {
+    font-size: 120%;
+    padding: 5%; 
+}
+
+.Instruction li {
+    font-size: 70%;
+}
+    
+label {
+    font-size: 75%;
+    padding-left: 1%;
+}
+    
+.submit [type="submit"] {
+    width: 100%; 
+    font-size: 100%; 
+}
+    
+input, .selection select[type = 'selectbtn'] {
+   width: 100%; 
+   font-size: 70%;
+}
+    
+.Instruction ol {
+    padding-left: 10%; 
+}
+.Instrcnts {
+    font-size: 80%;
+}
+    
+table th,
+table td {
+    padding: 5px; 
+    font-size: 40%; 
+}
+    
+table {
+    font-size: 70%;
+}
+
+.MainForm #fullName {
+    margin-top: .5rem;
+}
+
+    
+.MainForm #email {
+    margin-top: .5rem;
+}
+.MainForm #course {
+    font-size: 70%;
+}
+.enrolled {
+    font-size: 120%;
+    width: auto;
+}
+
+@media (max-width: 320px) {
+h1 {
+    font-size: 100%;
+    padding: 5%; 
+}
+
+.submit [type="submit"] {
+    font-size: 90%; 
+}
+
+table th,
+table td {
+    font-size: 50%; 
+}
+}
+}
